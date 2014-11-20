@@ -193,7 +193,7 @@ module.exports = nativeDescription: "简体中文", englishDescription: "Chinese
   play_level:
     done: "完成"
     home: "主页" # Not used any more, will be removed soon.
-    level: "等级" # Like "Level: Dungeons of Kithgard"
+    level: "关卡" # Like "Level: Dungeons of Kithgard"
     skip: "跳过"
     game_menu: "游戏菜单"
     guide: "指南"
@@ -233,9 +233,9 @@ module.exports = nativeDescription: "简体中文", englishDescription: "Chinese
     tome_minion_spells: "助手的咒语" # Only in old-style levels.
     tome_read_only_spells: "只读的咒语" # Only in old-style levels.
     tome_other_units: "其他单元" # Only in old-style levels.
-#    tome_cast_button_run: "Run"
-#    tome_cast_button_running: "Running"
-#    tome_cast_button_ran: "Ran"
+    tome_cast_button_run: "运行"
+    tome_cast_button_running: "运行中"
+    tome_cast_button_ran: "运行结束"
     tome_submit_button: "提交"
     tome_reload_method: "重载该方法的原始代码" # Title text for individual method reload button.
     tome_select_method: "选择方法"
