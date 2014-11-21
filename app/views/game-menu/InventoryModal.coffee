@@ -84,7 +84,7 @@ module.exports = class InventoryModal extends ModalView
 
     # sort into one of the four groups
     locked = not (item.get('original') in me.items())
-    #locked = false if me.get('slug') is 'nick'
+    locked = false if me.get('slug') is 'nick'
 
     if not item.getFrontFacingStats().props.length and not _.size(item.getFrontFacingStats().stats) and not locked  # Temp: while there are placeholder items
       null  # Don't put into a collection
@@ -436,7 +436,7 @@ module.exports = class InventoryModal extends ModalView
       hasGoneFullScreenOnce = true
     @updateConfig =>
       @trigger? 'play-click'
-    window.tracker?.trackEvent 'Play Level Modal', Action: 'Play'
+    window.tracker?.trackEvent 'Play Level Modal', Action: 'Play', ['Google Analytics']
 
   updateConfig: (callback, skipSessionSave) ->
     sessionHeroConfig = @options.session.get('heroConfig') ? {}
